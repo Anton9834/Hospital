@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="48eaa7ded8044feb96547e40ad774988" Name="Diagram1">
+        <EntityTypeShape EntityType="k_04Model.Cabinet" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="k_04Model.Doctor" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="k_04Model.Patient" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="k_04Model.Reception" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="k_04Model.Specialization" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="k_04Model.Status" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="k_04Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="k_04Model.Timetable" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <AssociationConnector Association="k_04Model.Doctor_fk1" ManuallyRouted="false" />
+        <AssociationConnector Association="k_04Model.FK_Doctor_Specialization" ManuallyRouted="false" />
+        <AssociationConnector Association="k_04Model.FK_Reception_Doctor" ManuallyRouted="false" />
+        <AssociationConnector Association="k_04Model.Timetable_fk0" ManuallyRouted="false" />
+        <AssociationConnector Association="k_04Model.FK_Reception_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="k_04Model.Reception_fk2" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

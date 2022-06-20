@@ -1,0 +1,31 @@
+﻿<Window x:Class="Hospital.Account"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hospital"
+        mc:Ignorable="d"
+        Title="Account" Height="400" Width="420">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="38,104,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="14"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="38,141,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="14"/>
+        <Label Content="Отчество" HorizontalAlignment="Left" Margin="38,181,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="14"/>
+        <Label Content="Дата рождения" HorizontalAlignment="Left" Margin="38,219,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="14"/>
+        <Label Content="Номер полиса" HorizontalAlignment="Left" Margin="38,256,0,0" VerticalAlignment="Top"  FontFamily="Verdana" FontSize="14"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="38,63,0,0" VerticalAlignment="Top"  FontFamily="Verdana" FontSize="14"/>
+        <TextBox x:Name="Sur" HorizontalAlignment="Left" Height="23" Margin="164,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Style="{DynamicResource RoundedTextBox}" BorderBrush="White"/>
+        <TextBox x:Name="Nam" HorizontalAlignment="Left" Height="23" Margin="164,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Style="{DynamicResource RoundedTextBox}" Background="White" BorderBrush="White"/>
+        <TextBox x:Name="Pat" HorizontalAlignment="Left" Height="23" Margin="164,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Style="{DynamicResource RoundedTextBox}" BorderBrush="White"/>
+        <TextBox x:Name="BirthD" HorizontalAlignment="Left" Height="23" Margin="164,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Style="{DynamicResource RoundedTextBox}" BorderBrush="White"/>
+        <TextBox x:Name="PolicyN" HorizontalAlignment="Left" Height="23" Margin="164,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Style="{DynamicResource RoundedTextBox}" Grid.ColumnSpan="2" BorderBrush="White"/>
+        <TextBox x:Name="Log" HorizontalAlignment="Left" Height="23" Margin="164,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"  Style="{DynamicResource RoundedTextBox}" BorderBrush="White"/>
+        <Label Content="Профиль" HorizontalAlignment="Left" Margin="156,10,0,0" VerticalAlignment="Top" FontFamily="Cooper Black" FontSize="20" Grid.ColumnSpan="2"/>
+        <Button x:Name="Close" Content="X" HorizontalAlignment="Left" Margin="140,13,0,0" VerticalAlignment="Top" Background="#FF1BC19F" BorderBrush="#FF1BC19F" FontFamily="Verdana" Height="34" Width="43" Click="Close_Click" Style="{DynamicResource RoundedButton}" FontSize="20" FontWeight="Bold" Foreground="White" Grid.Column="1"/>
+        <Button Content="&lt;" HorizontalAlignment="Left" Margin="82,13,0,0" VerticalAlignment="Top" Height="34" Width="43" Background="#FF1BC19F" BorderBrush="#FF1BC19F" FontFamily="Verdana" FontSize="20" FontWeight="Bold" Foreground="White" Style="{DynamicResource RoundedButton}" Grid.Column="1" Click="Button_Click"/>
+    </Grid>
+</Window>
